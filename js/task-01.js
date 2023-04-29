@@ -2,16 +2,12 @@
 const navItem = document.querySelectorAll(".item")
 console.log("Number of categories:", navItem.length)
 
-console.log(navItem)
+ 
+Array.prototype.forEach.call(navItem, (element) => {
+    const title = element.querySelector("h2").innerHTML;
+    const itemLength = element.querySelectorAll("li").length;
+    console.log(`Category: ${title}`);
+    console.log(`Elements: ${itemLength}`);
+});
 
-
-
-// const navItemTitle = document.querySelectorAll("h2")
-// console.log(navItemTitle[0].textContent)
-
-// navItemTitle[1].textContent = "Новая категория"
-
-// navItemTitle.forEach(itemTitle => {
-//     console.log(`Category: ${navItemTitle[itemTitle]}, Elements: ${navItemTitle.length}`)
-// });
 
