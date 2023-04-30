@@ -4,6 +4,8 @@ const valueEl = document.getElementById('value');
 const incrementBtn = document.querySelector('[data-action="increment"]');
 const decrementBtn = document.querySelector('[data-action="decrement"]');
 
+valueEl.textContent = 5;
+
 const onClickIncrementBtn = () => {
     valueEl.textContent = counterValue +=1
 }
